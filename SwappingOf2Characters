@@ -1,0 +1,29 @@
+import java.util.*;
+class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter the string");
+        String s=sc.nextLine();
+        System.out.print("enter the 2 characters to swap");
+        char a=sc.next().charAt(0);
+        char b=sc.next().charAt(0);
+        String ss="";
+        for(int i=0;i<s.length();i++)
+        {
+            char ch=s.charAt(i);
+            if(ch==a)
+            {
+                ss+=b;
+            }
+            else if(ch==b)
+            {
+                ss+=a;
+            }
+            else 
+            ss+=ch;
+        }
+        System.out.print(ss);
+    }
+}
